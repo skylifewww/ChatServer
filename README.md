@@ -24,8 +24,6 @@ Documentation:<br/>
         {"username": "xxxx", "email": "yyyyy@yyy.yy", "password": "zzzzz"}<br/>
    *) delete: deletes current user<br/>
 <br/>
-<br/>
-<br/>
 Examples:<br/>
 --------<br/>
 <br/>
