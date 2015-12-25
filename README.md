@@ -1,13 +1,14 @@
 # ChatServer<br/>
 version: 1.0<br/>
+<br/>
 Setup:<br/>
 ------<br/>
-<br/>
 Inital setup<br/>
    *) git clone <path><br/>
    *) virtualenv env<br/>
    *) source env/bin/activate<br/>
    *) pip install -r chatservice/requirements.txt<br/>
+<br/>
 Documentation:<br/>
 --------------<br/>
 1. /api/v1/chats/<br/>
@@ -19,6 +20,7 @@ Documentation:<br/>
    *) post: creates user <br/>
         {"username": "xxxx", "email": "yyyyy@yyy.yy", "password": "zzzzz"}<br/>
    *) delete: deletes current user<br/>
+<br/>
 Examples:<br/>
 --------<br/>
 1. API: /api/v1/chats<br/>
