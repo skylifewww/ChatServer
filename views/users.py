@@ -13,6 +13,17 @@ logger = logging.getLogger('UserProfileAPI')
 
 class UserProfileAPI(APIView):
 
+    def get(self, request):
+        user_id = request.query_params.get('user_id', None)
+        try:
+            user = UserProfile.objects.get(id=user_id)
+            serializer = UserProfileSerializer(user)    
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        except Exception as e:
+            logger.error("Unable to find user id: %s" % e)
+            response = {'msg': "User doesn't exists"}
+            return Response(response, status=status.HTTP_404_NOT_FOUND)
+
     def post(self, request, format=None):
         serializer = UserProfileSerializer(data=request.data)
         if serializer.is_valid():
