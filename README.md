@@ -97,7 +97,7 @@ RESPONSE: <br/>
 	    }<br/>
 	  ]<br/>
 	}<br/>
-2. API: /api/v1/users/?user_id=<id><br/>
+2. API: /api/v1/users/?user_id="id"<br/>
 METHOD: GET<br/>
 RESPONSE: <br/>
 	{<br/>
