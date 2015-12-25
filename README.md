@@ -1,6 +1,5 @@
 # ChatServer<br/>
 version: 1.0<br/>
-<br/>
 Setup:<br/>
 ------<br/>
 <br/>
@@ -9,11 +8,8 @@ Inital setup<br/>
    *) virtualenv env<br/>
    *) source env/bin/activate<br/>
    *) pip install -r chatservice/requirements.txt<br/>
-<br/>
-<br/>
 Documentation:<br/>
 --------------<br/>
-<br/>
 1. /api/v1/chats/<br/>
    *) get: Gets the latest messages which has be sent to the user<br/>
    *) post: Send message to the user<br/>
@@ -23,11 +19,9 @@ Documentation:<br/>
    *) post: creates user <br/>
         {"username": "xxxx", "email": "yyyyy@yyy.yy", "password": "zzzzz"}<br/>
    *) delete: deletes current user<br/>
-<br/>
 Examples:<br/>
 --------<br/>
-<br/>
-API: /api/v1/chats<br/>
+1. API: /api/v1/chats<br/>
 METHOD: GET<br/>
 RESPONSE: <br/>
 	{<br/>
@@ -101,8 +95,7 @@ RESPONSE: <br/>
 	    }<br/>
 	  ]<br/>
 	}<br/>
-<br/>
-API: /api/v1/users/?user_id=<id><br/>
+2. API: /api/v1/users/?user_id=<id><br/>
 METHOD: GET<br/>
 RESPONSE: <br/>
 	{<br/>
