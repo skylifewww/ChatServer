@@ -8,7 +8,7 @@ from rest_framework import status
 from accounts.models import UserProfile
 from accounts.serializer import UserProfileSerializer
 
-logger = logging.get_logger('UserProfileAPI')
+logger = logging.getLogger('UserProfileAPI')
 
 
 class UserProfileAPI(APIView):
